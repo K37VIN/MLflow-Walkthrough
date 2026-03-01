@@ -60,7 +60,7 @@ with mlflow.start_run() as parent:
 
   mlflow.sklearn.log_model(grid_search.best_estimator_,"random_forest")
 
-  mlflow.set_tag("author", "Devayush Kar")
+  mlflow.set_tags("author","Devayush Kar")
 
   print(best_params)
   print(best_score)
